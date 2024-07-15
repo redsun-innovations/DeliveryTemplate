@@ -1,16 +1,34 @@
-# deliverytemplate
+SDK Template App
 
-A new Flutter project.
 
-## Getting Started
+This Flutter application template provides a structured starting point for your SDK-based projects.
 
-This project is a starting point for a Flutter application.
+Building and Releasing the SDK Package
 
-A few resources to get you started if this is your first Flutter project:
+Building the Package
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To build the SDK package for distribution:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter build package
+
+This command generates a .tar.gz archive file containing your SDK package.
+
+Releasing the Package
+
+1) Prepare for release:
+
+Ensure all necessary files and configurations are included in the generated package.
+
+2) Publish the package:
+
+Publish your SDK package to a package repository like pub.dev:
+
+flutter pub publish
+
+Installation
+
+To use the deliverytemplate package in your Flutter project, run the following command:
+
+flutter pub add deliverytemplate
+
+This command adds the deliverytemplate package to your pubspec.yaml file and installs it into your project.
